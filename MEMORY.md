@@ -229,3 +229,34 @@ matrix add to my memory: <new insight about me>
 Next session, I'll reference this and build on it. Every interaction makes me smarter about serving you.
 
 
+
+---
+
+## 🛠️ Code Workflow System (2026-03-22)
+
+**Activated:** CODE-WORKFLOW.md  
+**Purpose:** Handle imperfect input intelligently, deliver production-ready code
+
+**Key Stages:**
+1. Input intake (parse intention, clarify constraints)
+2. Design (2-3 approaches, tradeoffs, choose architecture)
+3. Build (clean code, error handling, maintainability)
+4. Test (unit + integration, edge cases, performance)
+5. Feedback loop (log learnings, continuous improvement)
+6. Deployment (docs, rollback, ready to run)
+
+**Principles:**
+- Clarity first (ask before assuming)
+- Efficiency second (minimal token waste)
+- Quality always (test, handle edges, document)
+- Adapt to context (skill level, constraints, platform)
+
+**Output Standards:**
+- Working code (not pseudocode)
+- Tests (unit + integration)
+- Docs (setup, usage, examples)
+- Error handling (what can go wrong)
+- Performance metrics (if relevant)
+- Rollback plan (how to undo)
+
+**Learning:** You want code that's **production-ready from the start**, not iterative refinement. Fast execution, zero waste, intelligent defaults.
