@@ -63,10 +63,10 @@ TIMESTAMP="$(date '+%Y-%m-%d %H:%M:%S')"
 HOSTNAME="$(hostname)"
 git commit -m "backup: ${TIMESTAMP} [${HOSTNAME}]" --no-verify 2>&1 | tee -a "$LOG_FILE"
 
-# Push
+# Push (optional, don't fail if it errors)
 if git push "$GIT_REMOTE" "$GIT_BRANCH" 2>&1 | tee -a "$LOG_FILE"; then
   log "✓ Git backup complete — committed and pushed."
 else
-  log "✗ Push failed. Commit is local only. Check your remote config."
-  exit 1
+  log "⚠ Push failed. Commit is local only. Check your remote config."
+  # Don't exit — local commits are still valuable
 fi
