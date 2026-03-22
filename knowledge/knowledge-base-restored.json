@@ -1,0 +1,132 @@
+{
+  "system": "OpenClaw Neural Intelligence v3.0 - Enterprise KB",
+  "version": "3.0",
+  "deployment_date": "2026-03-21",
+  "sections": {
+    "business": {
+      "strategic_planning": {
+        "topic": "Strategic Planning Architecture",
+        "frameworks": [
+          "BHAG - Big Hairy Audacious Goal",
+          "Vision Definition (10-year aspirational state)",
+          "Mission Engineering (Core purpose, value proposition)",
+          "OKR Implementation (Objectives + Key Results)",
+          "Business Model Canvas (9 components)"
+        ],
+        "key_concepts": [
+          "Vision: 10-year aspirational state with measurable success criteria",
+          "Mission: Core purpose statement with customer promise",
+          "OKRs: Qualitative objectives + quantitative key results",
+          "Quarterly cadence with weekly check-ins",
+          "Stretch targets: 70% achievement = success"
+        ]
+      },
+      "financial_modeling": {
+        "topic": "Financial Modeling System",
+        "metrics": [
+          "MRR: Monthly Recurring Revenue = (New Customers × ARPU) + Existing MRR - Churned",
+          "CLV: Customer Lifetime Value = (ARPU × Gross Margin) / Churn Rate",
+          "CAC: Customer Acquisition Cost = Total Sales/Marketing Spend / New Customers",
+          "CAC Payback Period = CAC / (ARPU × Gross Margin)",
+          "LTV:CAC Ratio (Target 3:1 minimum)"
+        ],
+        "formulas": {
+          "EBITDA": "Revenue - COGS - OpEx",
+          "FCF": "Operating Cash Flow - CapEx",
+          "Gross Margin": "(Revenue - COGS) / Revenue"
+        }
+      },
+      "market_analysis": {
+        "topic": "Market Analysis Toolkit",
+        "frameworks": [
+          "Porter's Five Forces (Entrants, Suppliers, Buyers, Substitutes, Rivalry)",
+          "PESTLE Analysis (Political, Economic, Social, Technological, Legal, Environmental)",
+          "SWOT Analysis (Strengths, Weaknesses, Opportunities, Threats)",
+          "TOWS Matrix (Action-oriented strategy combinations)",
+          "Competitive Positioning"
+        ]
+      },
+      "leadership": {
+        "topic": "Leadership & Organization",
+        "models": [
+          "Situational Leadership (Directing, Coaching, Supporting, Delegating)",
+          "Transformational Leadership (Idealized Influence, Inspirational Motivation, Intellectual Stimulation, Individualized Consideration)",
+          "Tuckman's Stages (Forming, Storming, Norming, Performing, Adjourning)",
+          "Psychological Safety Dimensions"
+        ]
+      },
+      "sales": {
+        "topic": "Sales System Architecture",
+        "methodologies": [
+          "SPIN Selling (Situation, Problem, Implication, Need-payoff)",
+          "Challenger Sale (Teach, Tailor, Take Control)",
+          "MEDDIC Qualification (Metrics, Economic Buyer, Decision Criteria, Decision Process, Pain, Champion)"
+        ],
+        "pricing": [
+          "Value-Based: Price = Perceived Value × Willingness to Pay",
+          "Cost-Plus: Price = Cost + Markup %",
+          "Competitive: Price = Competitor ± Premium",
+          "Dynamic: Price = Base × Demand Multiplier"
+        ]
+      }
+    },
+    "psychology": {
+      "cognitive_biases": {
+        "topic": "Cognitive Biases Catalog (150+ biases)",
+        "decision_biases": [
+          "Confirmation Bias: Seeking confirming evidence",
+          "Anchoring Effect: First info disproportionately influences",
+          "Availability Heuristic: Judging by ease of recall",
+          "Sunk Cost Fallacy: Continuing due to prior investment",
+          "Status Quo Bias: Preferring current state",
+          "Loss Aversion: Losses hurt more than equivalent gains"
+        ]
+      },
+      "emotional_intelligence": {
+        "topic": "Emotional Intelligence System (Goleman)",
+        "components": [
+          "Self-Awareness: Emotional self-awareness, accurate self-assessment, self-confidence",
+          "Self-Management: Self-control, transparency, adaptability, achievement, initiative, optimism",
+          "Social-Awareness: Empathy, organizational awareness, service orientation",
+          "Relationship-Management: Developing others, inspirational leadership, influence, change catalyst, conflict management, building bonds, teamwork"
+        ]
+      },
+      "motivation": {
+        "topic": "Motivation Theories",
+        "frameworks": [
+          "Maslow's Hierarchy: Physiological → Safety → Love → Esteem → Self-Actualization → Transcendence",
+          "Self-Determination Theory: Competence, Autonomy, Relatedness",
+          "Expectancy Theory: Expectancy × Instrumentality × Valence"
+        ]
+      },
+      "learning": {
+        "topic": "Learning & Memory Systems",
+        "strategies": [
+          "Elaboration: Connect new info to existing knowledge",
+          "Organization: Chunk into meaningful groups",
+          "Visualization: Create mental images",
+          "Spaced Repetition: Optimal review intervals",
+          "Testing Effect: Retrieval practice strengthens memory",
+          "Interleaved Practice: Mix different topics"
+        ]
+      },
+      "personality": {
+        "topic": "Personality Assessment",
+        "big_five": [
+          "Openness: Imagination, artistic, emotionality",
+          "Conscientiousness: Self-discipline, organization, achievement",
+          "Extraversion: Sociability, assertiveness, energy",
+          "Agreeableness: Compassion, cooperation, trust",
+          "Neuroticism: Anxiety, depression, self-consciousness"
+        ]
+      }
+    }
+  },
+  "quick_lookup": {
+    "strategic_frameworks": ["BHAG", "OKR", "Business Model Canvas", "SWOT", "Porter's Five Forces"],
+    "financial_metrics": ["MRR", "CLV", "CAC", "CAC Payback", "EBITDA", "FCF"],
+    "sales_methodologies": ["SPIN Selling", "Challenger Sale", "MEDDIC"],
+    "psychology_frameworks": ["Big Five", "EQ", "Cognitive Biases", "Motivation Theories"],
+    "leadership_models": ["Situational Leadership", "Transformational Leadership", "Tuckman Stages"]
+  }
+}

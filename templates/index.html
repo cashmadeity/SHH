@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Claw - Web UI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #1a1a1a;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: #2d2d2d;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #00ff00;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .stat {
+            background: #1a1a1a;
+            padding: 10px;
+            border: 1px solid #00ff00;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: #00ffff;
+        }
+        
+        .stat-label {
+            font-size: 11px;
+            color: #aaa;
+            margin-top: 5px;
+        }
+        
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        
+        .panel {
+            background: #2d2d2d;
+            border: 1px solid #00ff00;
+            padding: 20px;
+        }
+        
+        .panel h2 {
+            margin-bottom: 15px;
+            font-size: 14px;
+            color: #00ffff;
+        }
+        
+        .chat-box {
+            background: #1a1a1a;
+            height: 400px;
+            overflow-y: auto;
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #333;
+        }
+        
+        .message {
+            margin-bottom: 10px;
+            padding: 8px;
+            background: #333;
+            border-left: 3px solid #00ff00;
+        }
+        
+        .message.user {
+            border-left-color: #00ffff;
+        }
+        
+        .message.system {
+            border-left-color: #ff6600;
+            color: #ff6600;
+        }
+        
+        .timestamp {
+            font-size: 9px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+        
+        input, textarea {
+            width: 100%;
+            background: #1a1a1a;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-family: 'Courier New', monospace;
+        }
+        
+        button {
+            background: #00ff00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: 'Courier New', monospace;
+        }
+        
+        button:hover {
+            background: #00ffff;
+        }
+        
+        button.danger {
+            background: #ff6600;
+        }
+        
+        button.danger:hover {
+            background: #ff0000;
+        }
+        
+        .list {
+            background: #1a1a1a;
+            height: 400px;
+            overflow-y: auto;
+            padding: 10px;
+            border: 1px solid #333;
+            font-size: 11px;
+        }
+        
+        .list-item {
+            padding: 5px;
+            margin-bottom: 8px;
+            border-left: 2px solid #00ff00;
+            padding-left: 8px;
+        }
+        
+        .list-item.pattern {
+            border-left-color: #00ffff;
+        }
+        
+        .list-item.concept {
+            border-left-color: #ffff00;
+        }
+        
+        @media (max-width: 768px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>VOICE CLAW - Web Interface</h1>
+            <div class="stats" id="stats">
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Conversations</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Patterns Learned</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">Vocabulary Words</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">0</div>
+                    <div class="stat-label">New This Session</div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main">
+            <!-- Chat Panel -->
+            <div class="panel">
+                <h2>CHAT & LEARN</h2>
+                <div class="chat-box" id="chatBox"></div>
+                <input type="text" id="userInput" placeholder="Type or paste text..." autofocus>
+                <button onclick="sendMessage()">Send</button>
+                <button onclick="clearChat()" class="danger">Clear Chat</button>
+                <input type="file" id="fileUpload" accept=".txt" style="margin-bottom: 10px;">
+                <button onclick="uploadFile()">Load & Learn File</button>
+            </div>
+            
+            <!-- Knowledge Panel -->
+            <div class="panel">
+                <h2>LEARNED PATTERNS & VOCABULARY</h2>
+                <div style="margin-bottom: 10px;">
+                    <button onclick="showPatterns()">Show Patterns</button>
+                    <button onclick="showVocab()">Show Words</button>
+                    <button onclick="saveAll()" style="background: #ffff00; color: #000;">SAVE ALL</button>
+                </div>
+                <div class="list" id="knowledgeList"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        async function sendMessage() {
+            const input = document.getElementById('userInput');
+            const text = input.value.trim();
+            
+            if (!text) return;
+            
+            // Add user message
+            addMessage('YOU', text);
+            input.value = '';
+            
+            try {
+                const res = await fetch('/api/response', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ input: text })
+                });
+                
+                const data = await res.json();
+                addMessage('CLAW', data.response);
+                updateStats(data.stats);
+            } catch (err) {
+                addMessage('SYSTEM', 'Error: ' + err.message);
+            }
+        }
+        
+        function addMessage(speaker, text) {
+            const box = document.getElementById('chatBox');
+            const msg = document.createElement('div');
+            msg.className = 'message ' + speaker.toLowerCase();
+            msg.innerHTML = `
+                <div class="timestamp">${new Date().toLocaleTimeString()}</div>
+                <strong>${speaker}:</strong> ${text}
+            `;
+            box.appendChild(msg);
+            box.scrollTop = box.scrollHeight;
+        }
+        
+        async function updateStats(stats) {
+            document.querySelectorAll('.stat-value').forEach((el, i) => {
+                const values = [stats.conversations, stats.patterns, stats.vocabulary, stats.new_patterns + stats.new_words];
+                el.textContent = values[i];
+            });
+        }
+        
+        async function showPatterns() {
+            try {
+                const res = await fetch('/api/patterns');
+                const patterns = await res.json();
+                const list = document.getElementById('knowledgeList');
+                list.innerHTML = patterns.map(p => `
+                    <div class="list-item pattern">${p.topic}</div>
+                `).join('');
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        async function showVocab() {
+            try {
+                const res = await fetch('/api/vocabulary');
+                const vocab = await res.json();
+                const list = document.getElementById('knowledgeList');
+                list.innerHTML = vocab.slice(0, 100).map(w => `
+                    <div class="list-item">${w}</div>
+                `).join('');
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        async function saveAll() {
+            try {
+                const res = await fetch('/api/save', { method: 'POST' });
+                const data = await res.json();
+                addMessage('SYSTEM', 'Saved! All learnings persisted.');
+                updateStats(data.stats);
+            } catch (err) {
+                addMessage('SYSTEM', 'Save failed: ' + err.message);
+            }
+        }
+        
+        async function clearChat() {
+            try {
+                await fetch('/api/clear', { method: 'POST' });
+                document.getElementById('chatBox').innerHTML = '';
+                addMessage('SYSTEM', 'Chat cleared.');
+            } catch (err) {
+                console.error(err);
+            }
+        }
+        
+        async function uploadFile() {
+            const file = document.getElementById('fileUpload').files[0];
+            if (!file) return;
+            
+            const formData = new FormData();
+            formData.append('file', file);
+            
+            try {
+                const res = await fetch('/api/load', { method: 'POST', body: formData });
+                const data = await res.json();
+                addMessage('SYSTEM', `Loaded and learned from ${data.learned} sentences!`);
+                updateStats(data.stats);
+            } catch (err) {
+                addMessage('SYSTEM', 'Upload error: ' + err.message);
+            }
+        }
+        
+        // Load initial stats
+        fetch('/api/stats').then(r => r.json()).then(updateStats);
+        
+        // Enter key to send
+        document.getElementById('userInput').addEventListener('keypress', e => {
+            if (e.key === 'Enter') sendMessage();
+        });
+        
+        addMessage('SYSTEM', 'Voice Claw Web UI ready. Type to chat. Upload .txt files to teach me.');
+    </script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "user": {
+    "name": "Cash",
+    "timezone": "America/Los_Angeles",
+    "preferences": {
+      "concise": true,
+      "no_fluff": true,
+      "direct": true
+    }
+  },
+  "knowledge": [],
+  "history": [],
+  "failures": []
+}

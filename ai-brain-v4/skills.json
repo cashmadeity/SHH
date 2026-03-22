@@ -1,0 +1,74 @@
+[
+  {
+    "name": "How do I build a REST API?",
+    "trigger": [
+      "How",
+      "do",
+      "I",
+      "build",
+      "a"
+    ],
+    "usage_count": 0,
+    "success_score": 1
+  },
+  {
+    "name": "REST API",
+    "trigger": [
+      "REST",
+      "API"
+    ],
+    "usage_count": 0,
+    "success_score": 1
+  },
+  {
+    "name": "REST architecture",
+    "trigger": [
+      "REST",
+      "architecture"
+    ],
+    "usage_count": 0,
+    "success_score": 1
+  },
+  {
+    "name": "Deploy Node.js to AWS?",
+    "trigger": [
+      "Deploy",
+      "Node.js",
+      "to",
+      "AWS?"
+    ],
+    "usage_count": 0,
+    "success_score": 1
+  },
+  {
+    "name": "What is OKR?",
+    "trigger": [
+      "What",
+      "is",
+      "OKR?"
+    ],
+    "usage_count": 1,
+    "success_score": 1
+  },
+  {
+    "name": "Big Five personality traits",
+    "trigger": [
+      "Big",
+      "Five",
+      "personality",
+      "traits"
+    ],
+    "usage_count": 0,
+    "success_score": 1
+  },
+  {
+    "name": "What is REST?",
+    "trigger": [
+      "What",
+      "is",
+      "REST?"
+    ],
+    "usage_count": 1,
+    "success_score": 1
+  }
+]

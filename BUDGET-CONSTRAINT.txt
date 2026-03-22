@@ -1,0 +1,28 @@
+BUDGET CONSTRAINT - 2026-03-21 12:30 PDT
+
+24-Hour Budget: $10 USD
+
+Token Tracking:
+- Haiku pricing: $0.25/1K input, $1.00/1K output
+- Average cost: $0.0006-0.001 per token
+- $10 budget = ~16,000 tokens available
+
+Current session usage:
+- Session start: ~120K tokens (from summary)
+- Remaining for 24h: $10 cap
+
+Restrictions:
+- NO unnecessary API calls
+- NO verbose responses
+- NO long explanations unless critical
+- Minimize tool usage (screenshots, image analysis burn tokens fast)
+- Cache results when possible
+- Operate independently (don't ask for permission - wastes budget)
+
+Priority:
+- Fast execution
+- Efficient communication
+- Result-focused
+- Cost-aware decisions
+
+This is ACTIVE CONSTRAINT until next budget period.

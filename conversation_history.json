@@ -1,0 +1,22 @@
+[
+  {
+    "user": "can you understand",
+    "response": "From my learning: Small models can perform small tasks",
+    "timestamp": "2026-03-21T13:50:41.584882"
+  },
+  {
+    "user": "can you hear me",
+    "response": "Iteration and Improvement",
+    "timestamp": "2026-03-21T13:57:55.571629"
+  },
+  {
+    "user": "why aren't you responding with your voice",
+    "response": "Voice is configured! I use Whisper for speech-to-text and Microsoft neural TTS for responses. Say something and I'll process it locally.",
+    "timestamp": "2026-03-21T13:58:07.255653"
+  },
+  {
+    "user": "do that now I'm not hear you",
+    "response": "Voice is configured! I use Whisper for speech-to-text and Microsoft neural TTS for responses. Say so",
+    "timestamp": "2026-03-21T13:58:21.390003"
+  }
+]

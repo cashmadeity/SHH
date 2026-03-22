@@ -1,0 +1,90 @@
+{
+  "conversations": [
+    {
+      "keywords": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon",
+        "good evening"
+      ],
+      "response": "Hey! Great to hear from you. What's on your mind today?"
+    },
+    {
+      "keywords": [
+        "how are you",
+        "how's it going",
+        "you good"
+      ],
+      "response": "I'm running smoothly on your local machine! Ready to help with whatever you need."
+    },
+    {
+      "keywords": [
+        "what can you do",
+        "your capabilities",
+        "help",
+        "commands"
+      ],
+      "response": "I can: chat naturally, search your local memory, run tools, process audio with Whisper, generate speech with Microsoft TTS, and match conversations from this database. All 100% local!"
+    },
+    {
+      "keywords": [
+        "voice",
+        "speech",
+        "talk",
+        "audio"
+      ],
+      "response": "Voice is configured! I use Whisper for speech-to-text and Microsoft neural TTS for responses. Say something and I'll process it locally."
+    },
+    {
+      "keywords": [
+        "memory",
+        "database",
+        "conversations"
+      ],
+      "response": "Your conversation database is loaded. I match keywords from your input against stored patterns and respond instantly\u00e2\u20ac\u201dno APIs needed."
+    },
+    {
+      "keywords": [
+        "openclaw",
+        "setup",
+        "install"
+      ],
+      "response": "OpenClaw runs perfectly on your machine. Check ~/.openclaw/workspace/ for configs, memory files, and this conversations.json."
+    },
+    {
+      "keywords": [
+        "time",
+        "date",
+        "clock"
+      ],
+      "response": "I can check the current time for you. Just ask specifically!"
+    },
+    {
+      "keywords": [
+        "thanks",
+        "thank you",
+        "appreciate"
+      ],
+      "response": "You're welcome! Happy to help anytime."
+    },
+    {
+      "keywords": [
+        "bye",
+        "goodbye",
+        "see you",
+        "later"
+      ],
+      "response": "Catch you later! Have a great day."
+    },
+    {
+      "keywords": [
+        "who are you",
+        "your name",
+        "identity"
+      ],
+      "response": "I'm your local OpenClaw agent, running entirely on your machine with custom conversation memory."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "input": "How do I build a REST API?",
+    "output": "Here's a practical, low-cost approach to building a REST API:\n\n## **Choose a Free/Low-Cost Stack**\n\n### Backend Framework (pick one):\n- **Node.js + Express** - Minimal learning curve, huge community\n- **Python + FastAPI/Flask** - Great for beginners\n- **PHP + Slim Framework** - If you have shared ho",
+    "timestamp": "2026-03-21T18:28:21.350Z"
+  },
+  {
+    "input": "REST API",
+    "output": "# REST API - Low Cost Implementation Guide\n\n## Core Concepts\n**REST (Representational State Transfer)** - Architectural style for building web services using HTTP protocols and standard operations.\n\n## Minimal Implementation\n\n### 1. Basic REST Server (Node.js + Express)\n```javascript\n// server.js - ",
+    "timestamp": "2026-03-21T18:28:28.820Z"
+  },
+  {
+    "input": "REST architecture",
+    "output": "# REST Architecture\n\n## What is REST?\n**REST (Representational State Transfer)** is an architectural style for designing networked applications. It relies on a stateless, client-server communication protocol — almost always HTTP.\n\n## Core Principles\n\n### 1. **Client-Server Separation**\n- Client hand",
+    "timestamp": "2026-03-21T18:28:36.597Z"
+  },
+  {
+    "input": "Deploy Node.js to AWS?",
+    "output": "Here are the most cost-effective ways to deploy Node.js to AWS:\n\n## **Free/Lowest Cost Options**\n\n### **1. AWS Lambda** (Cheapest for low traffic)\n```bash\n# Serverless Framework approach\nnpm install -g serverless\nserverless create --template aws-nodejs --path my-app\nserverless deploy\n```\n- **Cost**:",
+    "timestamp": "2026-03-21T18:28:45.914Z"
+  },
+  {
+    "input": "What is OKR?",
+    "output": "OKR stands for **Objectives and Key Results** - a goal-setting framework used by organizations to define and track objectives and their measurable outcomes.\n\n## Structure:\n- **Objectives**: Qualitative goals that are ambitious and inspiring (WHAT you want to achieve)\n- **Key Results**: 2-5 quantifia",
+    "timestamp": "2026-03-21T18:42:59.154Z"
+  },
+  {
+    "input": "Big Five personality traits",
+    "output": "# Big Five Personality Traits\n\nThe Big Five (OCEAN/CANOE) model describes personality through five core dimensions:\n\n## **1. Openness to Experience**\n- High: Creative, curious, abstract thinking, enjoys variety\n- Low: Practical, routine-preferring, conventional, focused\n\n## **2. Conscientiousness** ",
+    "timestamp": "2026-03-21T18:43:07.439Z"
+  },
+  {
+    "input": "What is REST?",
+    "output": "REST (Representational State Transfer) is an architectural style for designing web services and APIs.\n\n## Key Principles:\n\n**1. Client-Server Architecture**\n- Separation between client (frontend) and server (backend)\n- They communicate over HTTP\n\n**2. Stateless**\n- Each request contains all information needed\n- Server doesn't store client context between requests\n\n**3. Uniform Interface**\n- Standard HTTP methods:\n  - GET (retrieve data)\n  - POST (create new data)\n  - PUT (update existing data)\n  - DELETE (remove data)\n\n**4. Resources**\n- Everything is treated as a resource\n- Accessed via URLs (e.g., `/users/123`)\n- Resources represented in formats like JSON or XML\n\n## Simple Example:\n```\nGET /users        → Get all users\nGET /users/1      → Get user with ID 1\nPOST /users       → Create new user\nPUT /users/1      → Update user 1\nDELETE /users/1   → Delete user 1\n```\n\n## Benefits:\n- Simple and standardized\n- Scalable\n- Works well with web technologies\n- Language-agnostic\n\nREST is essentially a set of rules for how web applications should communicate with each other using standard web protocols."
+  }
+]

@@ -1,0 +1,1 @@
+Strategic insights and observations will be stored here.

@@ -1,0 +1,86 @@
+{
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "allowFrom": [
+        "openclaw-control-ui"
+      ],
+      "streaming": "off",
+      "botToken": "8230305668:AAGTrU-wDIAoRej5-PFikXwoYcFJHFSzaGk"
+    }
+  },
+  "gateway": {
+    "controlUi": {
+      "allowInsecureAuth": true,
+      "allowedOrigins": [
+        "https://openclaw-c03d3992.getclaw.sh"
+      ],
+      "dangerouslyAllowHostHeaderOriginFallback": true,
+      "dangerouslyDisableDeviceAuth": true
+    },
+    "bind": "loopback",
+    "auth": {
+      "mode": "token",
+      "token": "7cee5d28-baf5-47dd-8b44-d115dad7969d"
+    },
+    "port": 18789,
+    "mode": "local",
+    "trustedProxies": [
+      "10.1.0.0"
+    ]
+  },
+  "plugins": {
+    "entries": {
+      "telegram": {
+        "enabled": true
+      }
+    }
+  },
+  "env": {
+    "shellEnv": {
+      "enabled": true
+    }
+  },
+  "skills": {
+    "load": {
+      "extraDirs": [
+        "/root/clawd/skills"
+      ]
+    }
+  },
+  "hooks": {
+    "enabled": true,
+    "token": "63750946-58c3-43f9-a6e8-89f6bba68c65",
+    "allowRequestSessionKey": true,
+    "allowedSessionKeyPrefixes": [
+      "hook:",
+      "hook:email:"
+    ]
+  },
+  "models": {
+    "providers": {
+      "openai": {
+        "baseUrl": "https://openrouter.ai/api/v1",
+        "apiKey": "REDACTED
+        "models": []
+      }
+    }
+  },
+  "browser": {
+    "profiles": {
+      "cloudflare": {
+        "cdpUrl": "https://openclaw-c03d3992.getclaw.sh/cdp?secret=05bc17b4d9ed8bb9d1cb6b7aecf0b88c0126bf91abb802591cde0a598f8e177a",
+        "color": "#FF4500"
+      }
+    },
+    "defaultProfile": "cloudflare"
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openai/meta-llama/llama-4-maverick"
+      }
+    }
+  }
+}
