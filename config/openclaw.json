@@ -62,7 +62,7 @@
     "providers": {
       "openai": {
         "baseUrl": "https://openrouter.ai/api/v1",
-        "apiKey": "REDACTED
+        "apiKey": "REDACTED",
         "models": []
       }
     }

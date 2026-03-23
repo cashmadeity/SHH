@@ -1,7 +1,7 @@
 #!/bin/bash
 
 REPO="/root/.openclaw/workspace"
-TOKEN="REDACTED
+TOKEN="REDACTED"
 REPO_URL="https://cashmadeity:${TOKEN}@github.com/cashmadeity/openclaw-backup.git"
 
 cd $REPO
