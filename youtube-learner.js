@@ -20,17 +20,19 @@ const { execSync } = require('child_process');
 const https = require('https');
 
 // Load OpenRouter API key
-const credPath = path.join(__dirname, '../.openclaw/credentials/openrouter.env');
-let OPENROUTER_KEY = '';
+let OPENROUTER_KEY = process.env.OPENROUTER_API_KEY;
 
-if (fs.existsSync(credPath)) {
-  const env = fs.readFileSync(credPath, 'utf8');
-  const match = env.match(/OPENROUTER_API_KEY="(.+?)"/);
-  if (match) OPENROUTER_KEY = match[1];
+if (!OPENROUTER_KEY) {
+  const credPath = path.join(__dirname, '../.openclaw/credentials/openrouter.env');
+  if (fs.existsSync(credPath)) {
+    const env = fs.readFileSync(credPath, 'utf8');
+    const match = env.match(/OPENROUTER_API_KEY="(.+?)"/);
+    if (match) OPENROUTER_KEY = match[1];
+  }
 }
 
 if (!OPENROUTER_KEY) {
-  console.error('❌ OpenRouter API key not found. Set it in .openclaw/credentials/openrouter.env');
+  console.error('❌ OpenRouter API key not found. Set OPENROUTER_API_KEY env var or .openclaw/credentials/openrouter.env');
   process.exit(1);
 }
 
@@ -50,8 +52,8 @@ async function fetchTranscript(youtubeUrl) {
     if (!videoId) throw new Error('Invalid YouTube URL');
 
     // Use yt-dlp to fetch transcript
-    const cmd = `yt-dlp --write-auto-sub --sub-lang en --skip-download "${youtubeUrl}" -o /tmp/yt_%(id)s 2>&1`;
-    const output = execSync(cmd, { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024 });
+    const cmd = `yt-dlp --write-auto-sub --sub-lang en --skip-download '${youtubeUrl}' -o '/tmp/yt_%(id)s' 2>&1`;
+    const output = execSync(cmd, { encoding: 'utf8', maxBuffer: 10 * 1024 * 1024, shell: '/bin/bash' });
 
     // Find the subtitle file
     const subFile = `/tmp/yt_${videoId}.en.vtt`;

@@ -74,7 +74,7 @@
     },
     {
       "chapter": "Local Processing and Privacy",
-      "concept": "Processing information locally\u00e2\u20ac\u201don the user's own machine\u00e2\u20ac\u201doffers significant advantages"
+      "concept": "Processing information locally\u2014on the user's own machine\u2014offers significant advantages"
     },
     {
       "chapter": "The Database Approach",
@@ -341,13 +341,9 @@
     {
       "topic": "The Future of Voice",
       "summary": "The Future of Voice"
-    },
-    {
-      "topic": "why aren't you responding with your voice",
-      "summary": "Voice is configured! I use Whisper for speech-to-text and Microsoft neural TTS for responses. Say so",
-      "learned": true
     }
   ],
+  "chapter_summaries": [],
   "vocabulary": [
     "a",
     "ability",
@@ -407,7 +403,6 @@
     "apps",
     "architecture",
     "are",
-    "aren't",
     "artificial",
     "as",
     "ask",
@@ -509,6 +504,7 @@
     "continue",
     "contrasts",
     "control",
+    "convenient",
     "converge",
     "convergence",
     "conversation",
@@ -566,6 +562,7 @@
     "either",
     "electrical",
     "elegance",
+    "emergence",
     "emerges",
     "engineering",
     "engineers",
@@ -586,6 +583,7 @@
     "exhibit",
     "expand",
     "expanding",
+    "expansion",
     "expect",
     "expectations",
     "experience",
@@ -657,7 +655,6 @@
     "hardware",
     "has",
     "have",
-    "hear",
     "heard",
     "help",
     "helpful",
@@ -672,7 +669,6 @@
     "humans",
     "hybrid",
     "i",
-    "i'm",
     "idea",
     "identify",
     "if",
@@ -757,6 +753,7 @@
     "listening",
     "listens",
     "local",
+    "locally",
     "logging",
     "logic",
     "logs",
@@ -821,7 +818,6 @@
     "no",
     "noise",
     "not",
-    "now",
     "objectives",
     "occurs",
     "of",
@@ -862,6 +858,7 @@
     "performance",
     "permissions",
     "personal",
+    "phenomenon",
     "phrase",
     "phrased",
     "play",
@@ -885,6 +882,7 @@
     "principles",
     "privacy",
     "process",
+    "processed",
     "processing",
     "product",
     "programmed",
@@ -903,6 +901,7 @@
     "quiet",
     "raises",
     "raising",
+    "randomly",
     "range",
     "rapid",
     "rare",
@@ -939,7 +938,6 @@
     "resemble",
     "resolve",
     "respond",
-    "responding",
     "response",
     "responses",
     "responsibility",
@@ -1142,5 +1140,6 @@
     "yet",
     "you",
     "your"
-  ]
+  ],
+  "questions_and_answers": []
 }

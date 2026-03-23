@@ -1,20 +1,36 @@
 {
   "videoId": "-MtzLiQ9w1c",
-  "timestamp": "2026-03-23T02:32:23.690Z",
+  "timestamp": "2026-03-23T02:41:39.835Z",
+  "processed_by": "local",
+  "cost": "0 tokens",
   "key_concepts": [
-    "machine learning",
-    "artificial intelligence",
-    "supervised learning",
-    "neural networks",
-    "deep learning"
+    "important",
+    "topic",
+    "main",
+    "concepts",
+    "include"
   ],
   "main_takeaways": [
-    "algorithms learn from data",
-    "improve over time through training"
+    "The main concepts include learning, implementation, and best practices...",
+    "Advanced techniques require mastery of basics...",
+    "Understanding fundamentals helps with application..."
   ],
   "vocabulary": [
-    "algorithms",
-    "training"
+    "important",
+    "topic",
+    "concepts",
+    "include",
+    "learning",
+    "implementation",
+    "practices",
+    "ideas",
+    "critical",
+    "success",
+    "understanding",
+    "fundamentals",
+    "helps",
+    "application",
+    "advanced"
   ],
-  "summary": "importance of machine learning and AI in modern technology"
+  "summary": "Discussion of important and topic with focus on practical application"
 }
